@@ -4,7 +4,6 @@ import logo from "../assets/svg/logo.svg";
 import { motion } from "framer-motion";
 const Footer = () => {
   const handleWhatsAppClick = () => {
-    // Replace "1234567890" with your WhatsApp number
     window.location.href = "https://wa.me/7604905848";
   };
   return (
@@ -27,12 +26,12 @@ const Footer = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeInOut", delay: 0.5 }}
-        className="w-full col-span-3 flex flex-col justify-center items-center mb-[50px]"
+        className="w-full col-span-3 flex flex-col justify-center items-center "
       >
         <img className="w-[100px]" src={logo} alt="" />
-        <p className=" text-green-500 font-semibold mb-4">
+        <p className=" text-green-500 font-semibold mb-2">
           WhatsApp{" "}
-          <span className="text-gray-800 font-normal ">+91 9443919192</span>
+          <span className="text-gray-800 font-normal ">+91 76049 05848</span>
         </p>
         <button
           className="w-[100px] h-[40px] bg-green-500 lg:hover:bg-green-400 shadow-xl ease-in-out duration-300 text-white font-semibold rounded-r-full rounded-l-full "
@@ -41,6 +40,10 @@ const Footer = () => {
           Chat
         </button>
       </motion.div>
+      <div className="w-full col-span-3 justify-center items-center my-10">
+        <p className="w-full text-center text-sm text-gray-600">Address</p>
+        <p className=" w-full text-center text-sm">1489, Kamarajapuram Colony Sivakasi east</p>
+      </div>
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}

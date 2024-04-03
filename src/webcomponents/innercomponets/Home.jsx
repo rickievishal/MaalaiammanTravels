@@ -9,6 +9,7 @@ import { FaLocationArrow } from "react-icons/fa";
 import { FaSackDollar } from "react-icons/fa6";
 import { IoLocationSharp } from "react-icons/io5";
 import { motion } from "framer-motion";
+import innova from "../../assets/svg/Innovacar.png";
 const Home = () => {
   const handleWhatsAppClick = () => {
     // Replace "1234567890" with your WhatsApp number
@@ -42,41 +43,34 @@ const Home = () => {
             <div className="flex justify-center items-center my-3 lg:px-[200px]">
               <p className="text-sm">
                 Contact us{" "}
-                <span className="text-gray-600 font-semibold">+91 7604905848</span>
+                <span className="text-gray-600 font-semibold">
+                  +91 7604905848
+                </span>
               </p>
             </div>
           </div>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            className="w-full bg-white "
-          >
-            <div className="w-full  h-[200px] sm:h-[200px] lg:h-[400px] z-0 flex justify-center items-center overflow-hidden  relative">
-              {/* <Lottie
-                className="z-0"
-                animationData={animationData}
-                loop={true}
-              /> */}
-              <img
-                src={kodaikanal}
-                className="w-full  scale-110 lg:translate-y-[200px] "
-                alt=""
-              />
-            </div>
-          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="w-full h-[200px] sm:h-[250px] flex flex-col justify-center items-center bg-gradient-to-tr from-black via-[rgb(27,11,1)] to-slate-900"
+            className="w-full h-[550px] sm:h-[1200px] lg:h-[1000px] bg-black  flex flex-col justify-center items-center  relative overflow-hidden "
           >
-            <p className="text-[18pt] sm:text-[30pt] text-center font-bold text-orange-500 ">
-              Madurai . <span className="text-gray-100">Kodaikanal</span>{" "}
-              <span className="text-green-500 ">.Chennai</span>
-            </p>
-            <p className="text-gray-300">and much more.</p>
+            <img
+              src={kodaikanal}
+              className="h-full w-full absolute object-cover scale-110  z-0"
+              alt=""
+            />
+            <div className="w-full h-[450px] sm:h-[1000px] lg:h-[800px] bg-gradient-to-b from-transparent via-[rgba(0,0,0,0.45)] to-black z-10 absolute bottom-0 "></div>
+
+            <div className="z-10 flex flex-col justify-center items-center translate-y-[50px]">
+              <p className="text-[18pt] sm:text-[30pt] text-center font-bold text-orange-500 z-10 ">
+                Madurai . <span className="text-gray-100">Kodaikanal</span>{" "}
+                <span className="text-orange-500 ">.Chennai</span>
+              </p>
+              <p className="text-gray-300 z-10">and much more.</p>
+            </div>
           </motion.div>
-          <div className="w-full lg:min-w-[800px] max-w-[1000px] my-[200px] grid grid-cols-3 gap-[20px]">
+          <div className="w-full lg:min-w-[800px] max-w-[1000px] my-[100px] lg:my-[200px] grid grid-cols-3 gap-[20px]">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -89,7 +83,7 @@ const Home = () => {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              className="col-span-3  lg:col-span-1 flex flex-col justify-center items-center mt-[40px]"
+              className="col-span-3  lg:col-span-1 flex flex-col justify-center items-center lg:mt-[40px]"
             >
               <div className="flex flex-col justify-center items-center w-full bg-orange-100 py-[100px] rounded-lg lg:shadow-xl lg:border lg:border-[rgb(255,233,208)] hover:scale-105 duration-300 ease-in-out hover:cursor-pointer">
                 <div className="px-[100px] text-orange-500  text-[50pt]">
@@ -108,7 +102,7 @@ const Home = () => {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              className="col-span-3 lg:col-span-1 flex flex-col justify-center items-center mt-[40px]"
+              className="col-span-3 lg:col-span-1 flex flex-col justify-center items-center lg:mt-[40px]"
             >
               <div className="flex flex-col justify-center items-center w-full bg-orange-100 py-[100px] rounded-lg lg:shadow-xl lg:border lg:border-[rgb(255,233,208)] hover:scale-105 duration-300 ease-in-out hover:cursor-pointer">
                 <div className="px-[100px] text-orange-500  text-[50pt]">
@@ -128,7 +122,7 @@ const Home = () => {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              className="col-span-3 lg:col-span-1 flex flex-col justify-center items-center mt-[40px]"
+              className="col-span-3 lg:col-span-1 flex flex-col justify-center items-center lg:mt-[40px]"
             >
               <div className="flex flex-col justify-center items-center w-full bg-orange-100 py-[100px] rounded-lg lg:shadow-xl lg:border lg:border-[rgb(255,233,208)] hover:scale-105 duration-300 ease-in-out hover:cursor-pointer">
                 <div className="px-[100px] text-orange-500  text-[50pt]">
@@ -146,24 +140,43 @@ const Home = () => {
               </div>
             </motion.div>
           </div>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            className="w-full col-span-3 py-[150px] bg-orange-400 flex flex-col justify-center items-center"
-          >
-            <div className="w-[50px] h-[50px] rounded-full bg-white flex justify-center items-center text-[20pt] text-orange-400 ">
-              <IoLocationSharp />
+          <div className="w-full h-[300px] lg:h-[400px]">
+            <div className="w-full  flex flex-col justify-center items-center relative">
+              <img
+                className="absolute w-[500px] sm:w-auto sm:h-[600px] lg:h-[1100px] top-[40px] sm:-top-[50px] sm:scale-75 lg:-top-[250px]  scale-75 lg:scale-50"
+                src={innova}
+                alt=""
+              />
+              <div className="w-full flex justify-center items-center h-[200px] px-3 lg:px-[200px] ">
+                {" "}
+                <p className="text-center text-2xl text-gray-800 lg:text-3xl font-semibold max-w-[900px]">
+                  Get the best car rental experience with top quality,
+                  convenience, and unbeatable value, only here!
+                </p>
+              </div>
             </div>
-            <p className="text-3xl lg:text-4xl w-full text-center font-semibold text-white mt-4">
-              We are based at Sivakasi.
-            </p>
-            <p className="text-white text-sm">
-              Serving customers with highclass car rentals.
-            </p>
-            <button className="w-[100px] py-1 mt-5 rounded-r-full rounded-l-full bg-white text-orange-500 hover:bg-orange-50 ease-in-out duration-300">
-              location
-            </button>
-          </motion.div>
+          </div>
+          <div className="w-full col-span-3 py-[150px] bg-orange-400 flex flex-col justify-center items-center">
+            {" "}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              className="w-full flex flex-col justify-center items-center"
+            >
+              <div className="w-[50px] h-[50px] rounded-full bg-white flex justify-center items-center text-[20pt] text-orange-400 ">
+                <IoLocationSharp />
+              </div>
+              <p className="text-3xl lg:text-4xl w-full text-center font-semibold text-white mt-4">
+                We are based at Sivakasi.
+              </p>
+              <p className="text-white text-sm">
+                Serving customers with highclass car rentals.
+              </p>
+              <button className="w-[100px] py-1 mt-5 rounded-r-full rounded-l-full bg-white text-orange-500 hover:bg-orange-50 ease-in-out duration-300">
+                location
+              </button>
+            </motion.div>
+          </div>
         </div>
       </div>
     </div>

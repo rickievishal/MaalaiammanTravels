@@ -72,7 +72,7 @@ const Header = () => {
             <LuMenu />
           </ul>
 
-          <ul className="h-full justify-center items-center gap-[50px] hidden sm:flex text-sm">
+          <ul className="h-full justify-center items-center gap-[20px] lg:gap-[50px] hidden sm:flex text-sm">
 
               <li
                 className="text-center w-[100px] h-[35px] flex justify-center items-center rounded-r-full rounded-l-full duration-300 ease-in-out hover:bg-[rgba(255,255,255,0.48)] hover:cursor-pointer"
