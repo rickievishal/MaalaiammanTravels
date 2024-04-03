@@ -72,7 +72,7 @@ const Home = () => {
           >
             <p className="text-[18pt] sm:text-[30pt] text-center font-bold text-orange-500 ">
               Madurai . <span className="text-gray-100">Kodaikanal</span>{" "}
-              <span className="text-green-500 ">.Kodaikanal</span>
+              <span className="text-green-500 ">.Chennai</span>
             </p>
             <p className="text-gray-300">and much more.</p>
           </motion.div>
