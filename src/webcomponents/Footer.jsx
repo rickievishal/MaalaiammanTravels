@@ -43,7 +43,7 @@ const Footer = () => {
       </motion.div>
       <div className="w-full col-span-3 justify-center items-center my-10">
         <p className="w-full text-center text-sm text-gray-600">Address</p>
-        <p className=" w-full text-center text-sm">1489, Kamarajapuram Colony Sivakasi east</p>
+        <p className=" w-full text-center text-sm">SRI MALAIAMMAN TRAVELS 1489 - GNANAGIRI ROAD SIVAKASI -EAST</p>
       </div>
       <div className="w-full col-span-3 flex justify-center items-center my-10">
         <a href="https://www.instagram.com/nareninova/" className="text-center text-3xl hover:cursor-pointer  text-gray-600 hover:text-gray-400"><FaInstagram /></a>

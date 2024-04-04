@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import logo from "../assets/svg/logo.svg";
 import { LuMenu } from "react-icons/lu";
 import { IoClose } from "react-icons/io5";
+import { Link } from "react-router-dom";
 const Header = () => {
   const [isscrolled, setIsScrolled] = useState(0);
   function scrollToPosition(scrollValue) {
@@ -45,17 +46,46 @@ const Header = () => {
               >
                 <div className="w-full h-full relative py-[100px]">
                   <ul className="flex flex-col gap-[60px] text-4xl">
-                    <li className="text-gray-700 font-semibold " >Menu</li>
-                    <li className="text-gray-700 font-semibold " onClick={()=>{setIsmenuclicked(!ismenuclicked) 
-                        scrollToPosition(0)}}>Home</li>
-                    <li className="text-gray-700 font-semibold " onClick={()=>{setIsmenuclicked(!ismenuclicked) 
-                    scrollToPosition(2600)}}>About</li>
-                    <li className="text-gray-700 font-semibold " onClick={()=>{setIsmenuclicked(!ismenuclicked)
-                    scrollToPosition(1900)}}>Services</li>
+                    <li className="text-gray-700 font-semibold ">Menu</li>
+                    <li
+                      className="text-gray-700 font-semibold "
+                      onClick={() => {
+                        setIsmenuclicked(!ismenuclicked);
+                        scrollToPosition(0);
+                      }}
+                    >
+                      Home
+                    </li>
+                    <li
+                      className="text-gray-700 font-semibold "
+                      onClick={() => {
+                        setIsmenuclicked(!ismenuclicked);
+                        scrollToPosition(2600);
+                      }}
+                    >
+                      About
+                    </li>
+                    <li
+                      className="text-gray-700 font-semibold "
+                      onClick={() => {
+                        setIsmenuclicked(!ismenuclicked);
+                        scrollToPosition(1900);
+                      }}
+                    >
+                      Services
+                    </li>
                   </ul>
-                  <div className="absolute right-5 top-[80px] text-[30pt]" onClick={()=>{setIsmenuclicked(!ismenuclicked)}}>
+                  <div
+                    className="absolute right-5 top-[80px] text-[30pt]"
+                    onClick={() => {
+                      setIsmenuclicked(!ismenuclicked);
+                    }}
+                  >
                     <IoClose />
                   </div>
+                  <button className="text-center w-[100px] h-[35px] bg-orange-500 hover:bg-orange-400 duration-300 ease-in-out rounded-r-full rounded-l-full flex justify-center items-center text-white mt-10">
+                    Book Now
+                  </button>
                 </div>
               </motion.div>
             )}
@@ -73,40 +103,40 @@ const Header = () => {
           </ul>
 
           <ul className="h-full justify-center items-center gap-[20px] lg:gap-[50px] hidden sm:flex text-sm">
+            <li
+              className="text-center w-[100px] h-[35px] flex justify-center items-center rounded-r-full rounded-l-full duration-300 ease-in-out hover:bg-[rgba(255,255,255,0.48)] hover:cursor-pointer"
+              onClick={() => {
+                scrollToPosition(0);
+              }}
+            >
+              Home
+            </li>
 
-              <li
-                className="text-center w-[100px] h-[35px] flex justify-center items-center rounded-r-full rounded-l-full duration-300 ease-in-out hover:bg-[rgba(255,255,255,0.48)] hover:cursor-pointer"
-                onClick={() => {
-                  scrollToPosition(0);
-                }}
-              >
-                Home
-              </li>
+            <li
+              className="  text-center w-[100px] h-[35px] flex justify-center items-center rounded-r-full rounded-l-full duration-300 ease-in-out hover:bg-[rgba(255,255,255,0.48)] hover:cursor-pointer"
+              onClick={() => {
+                scrollToPosition(2300);
+              }}
+            >
+              About
+            </li>
 
-
-              <li
-                className="  text-center w-[100px] h-[35px] flex justify-center items-center rounded-r-full rounded-l-full duration-300 ease-in-out hover:bg-[rgba(255,255,255,0.48)] hover:cursor-pointer"
-                onClick={() => {
-                  scrollToPosition(2300);
-                }}
-              >
-                About
-              </li>
-
-
-              <li
-                className=" text-center w-[100px] h-[35px] flex justify-center items-center rounded-r-full rounded-l-full duration-300 ease-in-out hover:bg-[rgba(255,255,255,0.48)] hover:cursor-pointer"
-                onClick={() => {
-                  scrollToPosition(3000);
-                }}
-              >
-                Services
-              </li>
+            <li
+              className=" text-center w-[100px] h-[35px] flex justify-center items-center rounded-r-full rounded-l-full duration-300 ease-in-out hover:bg-[rgba(255,255,255,0.48)] hover:cursor-pointer"
+              onClick={() => {
+                scrollToPosition(3000);
+              }}
+            >
+              Services
+            </li>
 
             <li>
-              <button className="text-center w-[100px] h-[35px] bg-orange-500 hover:bg-orange-400 duration-300 ease-in-out rounded-r-full rounded-l-full flex justify-center items-center text-white">
-                Book Now
-              </button>
+
+              <Link to={"/booking"}>
+                <button className="text-center w-[100px] h-[35px] bg-orange-500 hover:bg-orange-400 duration-300 ease-in-out rounded-r-full rounded-l-full flex justify-center items-center text-white">
+                  Book Now
+                </button>
+              </Link>
             </li>
           </ul>
         </nav>
