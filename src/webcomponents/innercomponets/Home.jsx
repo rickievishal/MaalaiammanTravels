@@ -20,10 +20,10 @@ const Home = () => {
       <div className="w-full grid grid-cols-2 overflow-hidden">
         <div className="col-span-2  mt-[250px]  flex flex-col justify-center items-center">
           <div className="flex flex-col justify-center items-center mb-[200px]">
-            <p className="text-[25pt] font-semibold">Book your trip with us.</p>
-            <p className="text-[10pt] w-[200px] lg:w-[300px] text-[rgb(44,44,44)] text-center">
+            <h1 className="text-[25pt] font-semibold text-center">Book your trip with us.</h1>
+            <h2 className="text-[10pt] w-[200px] lg:w-[300px] text-[rgb(44,44,44)] text-center">
               We offer premium car rentals at a very affordable price.
-            </p>
+            </h2>
             <div className="flex justify-center items-center gap-3 mt-[20px]">
               <button className="px-4 py-2 h-[45px] bg-black border border-black text-white lg:hover:bg-orange-500 transition ease-in-out duration-300">
                 Book now

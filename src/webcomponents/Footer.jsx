@@ -2,6 +2,7 @@ import React from "react";
 import { FaRegCopyright } from "react-icons/fa";
 import logo from "../assets/svg/logo.svg";
 import { motion } from "framer-motion";
+import { FaInstagram } from "react-icons/fa6";
 const Footer = () => {
   const handleWhatsAppClick = () => {
     window.location.href = "https://wa.me/7604905848";
@@ -43,6 +44,10 @@ const Footer = () => {
       <div className="w-full col-span-3 justify-center items-center my-10">
         <p className="w-full text-center text-sm text-gray-600">Address</p>
         <p className=" w-full text-center text-sm">1489, Kamarajapuram Colony Sivakasi east</p>
+      </div>
+      <div className="w-full col-span-3 flex justify-center items-center my-10">
+        <a href="https://www.instagram.com/nareninova/" className="text-center text-3xl hover:cursor-pointer  text-gray-600 hover:text-gray-400"><FaInstagram /></a>
+
       </div>
       <motion.div
         initial={{ opacity: 0, y: 40 }}
