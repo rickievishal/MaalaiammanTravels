@@ -87,7 +87,7 @@ const Header = () => {
               <li
                 className="  text-center w-[100px] h-[35px] flex justify-center items-center rounded-r-full rounded-l-full duration-300 ease-in-out hover:bg-[rgba(255,255,255,0.48)] hover:cursor-pointer"
                 onClick={() => {
-                  scrollToPosition(2600);
+                  scrollToPosition(2300);
                 }}
               >
                 About
@@ -97,7 +97,7 @@ const Header = () => {
               <li
                 className=" text-center w-[100px] h-[35px] flex justify-center items-center rounded-r-full rounded-l-full duration-300 ease-in-out hover:bg-[rgba(255,255,255,0.48)] hover:cursor-pointer"
                 onClick={() => {
-                  scrollToPosition(1900);
+                  scrollToPosition(3000);
                 }}
               >
                 Services
