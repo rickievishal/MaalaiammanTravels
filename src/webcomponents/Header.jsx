@@ -83,16 +83,23 @@ const Header = () => {
                   >
                     <IoClose />
                   </div>
-                  <button className="text-center w-[100px] h-[35px] bg-orange-500 hover:bg-orange-400 duration-300 ease-in-out rounded-r-full rounded-l-full flex justify-center items-center text-white mt-10">
-                    Book Now
-                  </button>
+                  <Link to={"/booking"}>
+                    <button
+                      onClick={() => setIsmenuclicked(false)}
+                      className="text-center w-[100px] h-[35px] bg-orange-500 hover:bg-orange-400 duration-300 ease-in-out rounded-r-full rounded-l-full flex justify-center items-center text-white mt-10"
+                    >
+                      Book Now
+                    </button>
+                  </Link>
                 </div>
               </motion.div>
             )}
           </AnimatePresence>
-          <ul className="h-[80px] flex justify-center items-center overflow-hidden">
-            <img className="h-[100px]" src={logo} alt="" />
-          </ul>
+          <Link to={"/"}>
+            <ul className="h-[80px] flex justify-center items-center overflow-hidden">
+              <img className="h-[100px]" src={logo} alt="" />
+            </ul>
+          </Link>
           <ul
             className="h-full flex justify-center items-center text-[18pt] sm:hidden"
             onClick={() => {
@@ -131,7 +138,6 @@ const Header = () => {
             </li>
 
             <li>
-
               <Link to={"/booking"}>
                 <button className="text-center w-[100px] h-[35px] bg-orange-500 hover:bg-orange-400 duration-300 ease-in-out rounded-r-full rounded-l-full flex justify-center items-center text-white">
                   Book Now
