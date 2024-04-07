@@ -17,6 +17,7 @@ const Home = () => {
     window.location.href = "https://wa.me/7604905848";
   };
 
+
   return (
     <div className="w-full">
       <div className="w-full grid grid-cols-2 overflow-hidden">
@@ -28,7 +29,7 @@ const Home = () => {
             <h2 className="text-[10pt] w-[200px] lg:w-[300px] text-[rgb(44,44,44)] text-center">
               We offer premium car rentals at a very affordable price.
             </h2>
-            <div className="flex justify-center items-center gap-3 mt-[20px]">
+            <div  className="flex justify-center items-center gap-3 mt-[20px]">
               <Link to={"/booking"}>
                 <button
 
@@ -139,7 +140,7 @@ const Home = () => {
                 </div>
                 <div className="w-[300px] mt-4 flex flex-col justify-center items-center ">
                   <p className="text-[20pt] text-center font-normal">
-                    Premium Rentals
+                    Value 
                   </p>
                   <p className="text-center text-xs mt-3 ">
                     we ensure that the quality of the services is top notch for
